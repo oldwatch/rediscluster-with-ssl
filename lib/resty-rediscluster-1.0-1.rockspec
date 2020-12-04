@@ -1,4 +1,4 @@
-package = "lua-resty-redis-cluster"
+package = "resty-rediscluster"
 version = "1.0-1"
 source = {
     url = "https://github.com/steve0511/resty-redis-cluster/"
@@ -18,8 +18,8 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
-        ["resty.rediscluster"] = "resty/rediscluster.lua",
-        ["resty.xmodem"] = "resty/xmodem.lua",
-        ["resty.redis"] = "resty/redis.lua",
+        ["resty.rediscluster.rediscluster"] = "resty/rediscluster/rediscluster.lua",
+        ["resty.rediscluster.xmodem"] = "resty/rediscluster/xmodem.lua",
+        ["resty.rediscluster.redis"] = "resty/rediscluster/redis.lua",
     }
 }

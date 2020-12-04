@@ -1,6 +1,6 @@
-local redis = require "resty.redis"
+local redis = require "resty.rediscluster.redis"
 local resty_lock = require "resty.lock"
-local xmodem = require "resty.xmodem"
+local xmodem = require "resty.rediscluster.xmodem"
 local setmetatable = setmetatable
 local tostring = tostring
 local string = string
